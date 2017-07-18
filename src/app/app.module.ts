@@ -1,6 +1,7 @@
 // Modules
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { HttpModule } from "@angular/http";
 
 // Components
 import { AppComponent } from "./app.component";
@@ -9,11 +10,12 @@ import { ScoreComponent } from "./score/score.component";
 
 // Services
 import { HttpService } from "./http.service";
+import { ApiService } from "./api.service";
 
 @NgModule({
   declarations: [AppComponent, UserComponent, ScoreComponent],
-  imports: [BrowserModule],
-  providers: [HttpService],
+  imports: [BrowserModule, HttpModule],
+  providers: [HttpService, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
