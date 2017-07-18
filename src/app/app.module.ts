@@ -2,6 +2,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { HttpModule } from "@angular/http";
+import { FormsModule } from "@angular/forms";
 
 // Components
 import { AppComponent } from "./app.component";
@@ -14,7 +15,7 @@ import { ApiService } from "./api.service";
 
 @NgModule({
   declarations: [AppComponent, UserComponent, ScoreComponent],
-  imports: [BrowserModule, HttpModule],
+  imports: [BrowserModule, HttpModule, FormsModule],
   providers: [HttpService, ApiService],
   bootstrap: [AppComponent]
 })

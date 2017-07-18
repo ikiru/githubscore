@@ -1,7 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { HttpService } from "../http.service";
-import { FormsModule } from "@angular/forms";
+// import { FormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
 @Component({
   selector: "app-user",
